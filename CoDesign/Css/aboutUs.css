@@ -1,0 +1,108 @@
+/* Sidebar css begins here*/
+aside#sidebar{
+    padding: 150px 0 0 100px;
+    width:30%;
+    margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+}
+
+/*Sidebar css ends here*/
+/* Main-col css begins here*/
+article#main-col{
+    width:100%;
+}
+
+article #pic1, #pic2, #pic3{
+    /*background-color: white;*/
+    /*height: 130px;*/
+    display: inline-block;
+    align-content: center;
+}
+article img{
+    padding: 0;
+    border: 1px white solid;
+}
+
+#pic1{
+    float: right;
+    margin: -2% 15% 0% 0%;
+    width: 30.5%;
+    height: 25%;
+}
+#pic2{
+    float: left;
+    /*margin: 20px 0 0 70px;*/
+    width: 35%;
+    /*height: 5px;*/
+}
+#pic3{
+    float: right;
+    margin: -3% 15% 0 0;
+    width: 35.5%;
+    height: 385px;
+}
+article #abbs h3{
+    font-style:oblique;
+    font-size: 25px;
+}
+.page-title{
+    font-size: 40px;
+    color: ghostwhite;
+    font-weight: bold;
+    font-style:oblique;
+    background:linear-gradient(to bottom,#10586E 18%,#31E3A8)no-repeat; ;
+    width: 20%;
+    text-align: center;
+    border: 1px solid #10586E;
+    border-radius: 5%;
+}
+
+
+#mainback{
+    background:linear-gradient(to top,#10586E 68%,#31E3A8)no-repeat;
+    /*background: red;*/
+}
+
+
+#main{
+    padding-bottom: 150px;
+}
+
+/*Main col css ends here*/
+
+/* Abbs css begins here*/
+ul#abbs p{
+    color: white;
+}
+
+ul#abbs .abbs1,.abbs2,.abbs3{
+    /*background:linear-gradient(to right,#31E3A8 5%,white,#31E3A8,white,#31E3A8);*/
+    color: ghostwhite;
+    width: 40%;
+    font-size: 17px;
+    /*background: green;*/
+    margin-bottom:10%;
+    padding:20px;
+    list-style: none;
+}
+ul#abbs .abbs1
+{
+    float: left;
+}
+ul#abbs .abbs2
+{
+    float: right;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+ul#abbs .abbs3
+{
+    float: left;
+    margin-top: 10%;
+}
+
+/*Abbs css ends here*/

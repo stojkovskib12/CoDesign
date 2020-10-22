@@ -1,0 +1,463 @@
+/*Global css begins here*/
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    font-family: Palatino Linotype,Arial, Helvetica,sans-serif;
+    background-color: #f4f4f4;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 80%;
+    margin-left: 20%;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.black{
+    color: black;
+}
+/*Global css ends here*/
+/*Letters css begins here*/
+#C{
+    font-size: 50px;
+}
+#O{
+    font-size: 40px;
+}
+#D{
+    font-size: 35px;
+}
+#E{
+    font-size: 30px;
+}
+#S{
+    font-size: 40px;
+}
+#I{
+    font-size: 37px;
+}
+#G{
+    font-size: 33px;
+}
+#N{font-size: 30px;
+}
+/*Letters css ends here*/
+/*Header css begins here*/
+header{
+    /*background: linear-gradient(to left,#31E3A8,#10586E 70%);*/
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    min-height: 70px;
+    background: linear-gradient(to bottom, black , #10586E 75%, #31E3A8 100%);
+    position: fixed;
+    width: 100%;
+}
+#padprob{
+    padding-top: 83.5px;
+}
+
+#border{
+    margin-top: 15px;
+    padding-bottom:5px;
+    background:linear-gradient(to left,#10586E,#31E3A8,#10586E,#31E3A8,#10586E,#31E3A8,#10586E,#31E3A8,#10586E);
+    position: fixed;
+    width: 100%;
+}
+header a{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+}
+button:active{
+
+}
+header a:hover{
+    font-size: 25px;
+    font-weight: bold;
+}
+header #branding h1{
+    font-size: 40px;
+    font-family: Palatino Linotype;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+    padding-left: 10px;
+
+}
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    padding-top: 2%;
+}
+header .current a
+{
+    color: #31E3A8;
+}
+header .current{
+    animation: buzzout 5s infinite alternate;
+}
+
+header #pad{
+    padding-left: 5px;
+}
+header .highlight{
+    color: #31E3A8;
+}
+
+.jackInTheBox {
+    animation-name: jackInTheBox;
+    animation: jackInTheBox 3s;
+}
+
+
+@keyframes hvr-pulse-grow {
+    to {
+        transform: scale(1.1);
+    }
+}
+@keyframes hvr-pulse-grow {
+    to {
+        transform: scale(1.1);
+    }
+}
+header .current{
+    animation: buzzout 5s infinite alternate;
+}
+
+/* Buzz Out */
+@keyframes buzzout {
+    10% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+        transform: translateX(1px) rotate(0);
+    }
+    100% {
+        transform: translateX(-1px) rotate(0);
+    }
+}
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+
+    animation-name: hvr-pulse-grow;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*dark background*/
+.dark{
+    padding:15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+/* Newsletter css beings here*/
+#newsletter{
+    padding:15px;
+    color:#ffffff;
+    /*  background: linear-gradient(to right,#35424a,#404f59);*/
+    background: linear-gradient(to bottom, black , #10586E 50%, black 100%);
+}
+
+#newsletter h1{
+    float:left;
+    font-style: oblique;
+
+}
+
+
+#newsletter form {
+    float:right;
+    margin-top:15px;
+    animation:nudge 5s linear infinite alternate;
+}
+
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+/*Newsletter css ends here */
+
+/*Footer css begins here*/
+footer{
+    bottom: 0;
+    /*padding:20px;*/
+    margin-top:20px;
+    color:#ffffff;
+    font-size: 12.5px;
+    /*background: linear-gradient(to right,#31E3A8,#10586E 70%);*/
+    background: linear-gradient(to right,black  , #10586E 50%, black 100%);
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}
+footer p, .container{
+    display: inline-block;
+}
+
+/*Footer css ends here*/
+
+
+/*Media*/
+
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button, .quote button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #newsletter form {
+        float: right;
+        margin-top: 15px;
+        animation: none;
+    }
+}
+
+/*======================================================================*/
+/*                             ANIMATIONS                               */
+
+/* Pulse Grow animation css begins here*/
+@keyframes hvr-pulse-grow {
+    to {
+        transform: scale(1.1);
+    }
+}
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+
+    animation-name: hvr-pulse-grow;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*Pulse grow animation css ends here*/
+
+
+@keyframes nudge {
+    0%{
+        transform: translate(0, 0);
+    }
+    16% {
+        transform: translate(-30px, 0);
+    }
+    32% {
+        transform: translate(-60px, 0);
+    }
+    48% {
+        transform: translate(-80px, 0);
+    }
+    64% {
+        transform: translate(-60px, 0);
+    }
+    80%{
+        transform: translate(-30px, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+/* Buzz Out */
+@keyframes buzzout {
+    10% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+        transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+        transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+        transform: translateX(1px) rotate(0);
+    }
+    100% {
+        transform: translateX(-1px) rotate(0);
+    }
+}
+
+/*Hinge*/
+/*=================================================*/
+@keyframes hinge {
+    0%{
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    20%,60% {
+        transform: rotate3d(0, 0, 1, 80deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    40%,80%{
+        transform: rotate3d(0, 0, 1, 60deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+
+    to {
+        transform: translate3d(0, 700px, 0);
+        opacity: 0;
+    }
+}
+
+.hinge {
+    animation-duration: 2s;
+    animation-name: hinge;
+}
+/*=====================================*/
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.jackInTheBox {
+    animation-name: jackInTheBox;
+    animation: jackInTheBox 3s;
+}
+/*===============================================*/
+
+/*Header up and down animation*/
+@keyframes code {
+    0%,100%{background: linear-gradient(to bottom, black , #10586E 25%, #10586E 35%, black 100%);}
+    10%,90%{background: linear-gradient(to bottom, black , #10586E 35%, #10586E 45%, black 100%);}
+    20%,80%{background: linear-gradient(to bottom, black , #10586E 45%, #10586E 55%, black 100%);}
+    30%,70%{background: linear-gradient(to bottom, black , #10586E 50%, #10586E 65%, black 100%);}
+    40%,60%{background: linear-gradient(to bottom, black , #10586E 55%, #10586E 75%, black 100%);}
+    50%{background: linear-gradient(to bottom, black , #10586E 60%, #10586E 85%, black 100%);}
+}
+/*===========================================*/
